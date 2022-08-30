@@ -9,10 +9,38 @@ html {
   min-height: 100%;
 }
 
-/*Comment in CSS */
+/*Text Color for Headers */
 .green{
   color: #4aaaa5;
 }
+
+/*Create text/image blocks*/
+
+#leftbox {
+  float:left; 
+  background:white;
+  width:48%;
+  height:650px;
+  margin-left:5px;
+  margin-bottom: 30px;
+}
+
+#rightbox{
+  float:right;
+  background:white;
+  width:48%;
+  height:650px;
+  margin-right:5px;
+  margin-bottom: 30px;
+}
+
+/*Line spacing*/
+.adjust-line-height {
+  line-height: 2em;
+  margin-left:30px;
+  margin-right:30px;
+}
+
 
 body {
   /* Positioning */
@@ -175,6 +203,10 @@ body {
 /* ----DESCRIPTION END---- */
 
 /* ----IMAGE NAV START---- */
+/*wrap style for images*/
+img.wrap {
+  float: left
+}
 #imageNav-area {
   width: 100%;
 

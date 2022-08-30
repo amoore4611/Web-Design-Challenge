@@ -41,10 +41,10 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                 <li><a href="temp.html">Max Temperature</a></li>
-                  <li><a href="humidity.html">Humidity</a></li>
-                  <li><a href="cloudiness.html">Cloudiness</a></li>
-                  <li><a href="wind.html">Wind Speed</a></li>
+                  <li><a href="visulaizations/temp.html">Max Temperature</a></li>
+                  <li><a href="visulaizations/humidity.html">Humidity</a></li>
+                  <li><a href="visualaizations/cloudiness.html">Cloudiness</a></li>
+                  <li><a href="visualaizations/wind.html">Wind Speed</a></li>
                 </ul>
               </li>
               <li><a href="comparison.html">Comparison</a></li>
@@ -57,22 +57,40 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
-    <h1 class = "green">Summary: Latitude vs. X</h1>
-    <hr>
-    <div class="square">
-      <div>
-        <img src="assets/images/Fig1.jpeg" title="vs. Max Temperature" atl = "vs. Max Temperature" width = "500" height="300" ALIGN=”right”>
+   
+      <div id = "leftbox">
+        <h1 class = "green"> Summary: Latitude vs. X</h1>
+        <hr>
+        <img class = "wrap" src="assets/images/Fig1.jpeg" title="vs. Max Temperature" atl = "vs. Max Temperature" width = "450" height="300">
+        <h5 class = "adjust-line-height">
+          The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we
+          first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 citites.
+          <br>
+          <br>
+          After assembing the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
+          temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of 
+          the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+        </h5>
       </div>
-    <p>
-      The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we
-      first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 citites.
-      <br>
-      <br>
-      After assembing the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
-      temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of 
-      the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-    </p>
-  </div>
+      <div id = "rightbox">
+        <h1 class = "green"> Visualizations</h1>
+        <hr>
+        <a href="assets/images/Fig1.jpeg">
+        <img src = "assets/images/Fig1.jpeg" title = "vs. Max Temperature" atl = "vs. Max Temperature" width = "300" height="250">
+        </a>
+        <a href="assets/images/Fig2.png">
+        <img src = "assets/images/Fig2.png" title = "vs. Humidity" atl = "vs. Humidity" width = "300" height="250">
+        </a>
+        <br>
+        <br>
+        <a href="assets/images/Fig3.png">
+        <img src = "assets/images/Fig3.png" title = "vs. Cloudiness" atl = "vs. Cloudiness" width = "300" height="250">
+        </a>
+        <a href="assets/images/Fig4.png">
+        <img src = "assets/images/Fig4.png" title = "vs. Wind Speed" atl = "vs. Wind Speed" width = "300" height="250">
+        </a>
+      </div>    
+
     <!-- End of container -->
 
     <!-- Start of footer -->
