@@ -9,12 +9,13 @@ html {
   min-height: 100%;
 }
 
-/*Text Color for Headers */
-.green{
-  color: #4aaaa5;
-}
-
 /*Create text/image blocks*/
+#centerbox {
+  float:center; 
+  background:white;
+  width:650px;
+  height:650px;
+}
 
 #leftbox {
   float:left; 
@@ -265,6 +266,7 @@ img.wrap {
 
 .comparison-header {
   /* Positioning */
+  margin-left: 10px;
   margin-bottom: 10px;
   font-family: Georgia, Times, "Times New Roman", serif;
 
@@ -272,7 +274,7 @@ img.wrap {
   font-size: 20px;
   font-weight: bold;
   color: #4aaaa5;
-  text-align: center;
+  text-align: left;
 }
 
 /* ----COMPARISON END---- */
