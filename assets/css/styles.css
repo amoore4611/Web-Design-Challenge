@@ -1,10 +1,17 @@
 /* ----DEFAULT ELEMENT STYLING START---- */
+
+
 html {
   /* Positioning */
   position: relative;
 
   /* Box-model */
   min-height: 100%;
+}
+
+/*Comment in CSS */
+.green{
+  color: #4aaaa5;
 }
 
 body {
