@@ -57,39 +57,52 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
-    <div id = "leftbox">
-      <div id = "images">
-        <h1 class = "comparison-header"> Cloudiness</h1>
-        <hr>
-        <img src="../assets/images/Fig3.png" title="vs. Cloudiness" atl = "vs. Cloudiness" width = "500" height="350">
-      </div>
-      <h5 class = "adjust-line-height">
-       From the data, a correlation could not be dervied from city latitude and cloudiness. However, when looking at the graph, you can see
-       that 40%-60% cloudiness decreases between a latitude of 0 Deg.-40 Deg. Clouds are formed when water vapor in the air condenses
-       into visible water droplets (weather.gov). Due to much of that area being land locked, this could account for the lack of moderate
-       cloudiness. 
-      </h5>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5" id = "box">
+          <div id = "images">
+            <h1 class = "comparison-header"> Cloudiness</h1>
+            <hr>
+            <img src="../assets/images/Fig3.png" title="vs. Cloudiness" atl = "vs. Cloudiness" class = "img-responsive">
+          </div>
+            <h5 class = "adjust-line-height">
+              From the data, a correlation could not be derived from latitude and cloudiness. However, when looking at the graph, it's observed
+              that 40%-60% cloudiness decreases between a latitude of 0 Deg. - 40 Deg. Clouds are formed when water vapor in the air condenses
+              into visible water droplets (weather.gov). Due to much of that area being land locked, this could account for the lack of moderate
+              cloudiness. 
+            </h5>
+        </div>
+        <div class = "col-lg-6 offset-lg-1" id = "box">
+          <h1 class = "comparison-header"> Visualizations</h1>
+          <hr>
+          <div id = "images"> 
+            <div class = "row"> 
+              <div class = "col-lg-6 col-sm-5">
+                <a href="temp.html">
+                <img src = "../assets/images/Fig1.jpeg" title = "vs. Max Temperature" atl = "vs. Max Temperature" class = "img-responsive">
+                </a>
+              </div>
+              <div class = "col-lg-6 col-sm-5">
+                <a href="humidity.html">
+                <img src = "../assets/images/Fig2.png" title = "vs. Humidity" atl = "vs. Humidity" class = "img-responsive">
+                </a>
+              </div>
+              <div class="w-100 d-none d-md-block"></div>
+              <div class = "col-lg-6 col-sm-5">
+                <a href="cloudiness.html">
+                <img src = "../assets/images/Fig3.png" title = "vs. Cloudiness" atl = "vs. Cloudiness" class = "img-responsive">
+                </a>
+              </div>
+              <div class = "col-lg-6 col-sm-5">
+                <a href="wind.html">
+                <img src = "../assets/images/Fig4.png" title = "vs. Wind Speed" atl = "vs. Wind Speed" class = "img-responsive">
+                </a>
+              </div>
+            </div>
+          </div>      
+        </div> 
+      </div>     
     </div>
-    <div id = "rightbox">
-      <div id ="images">
-      <h1 class = "comparison-header"> Visualizations</h1>
-      <hr>
-      <a href="temp.html">
-      <img src = "../assets/images/Fig1.jpeg" title = "vs. Max Temperature" atl = "vs. Max Temperature" width = "300" height="250">
-      </a>
-      <a href="humidity.html">
-      <img src = "../assets/images/Fig2.png" title = "vs. Humidity" atl = "vs. Humidity" width = "300" height="250">
-      </a>
-      <br>
-      <br>
-      <a href="cloudiness.html">
-      <img src = "../assets/images/Fig3.png" title = "vs. Cloudiness" atl = "vs. Cloudiness" width = "300" height="250">
-      </a>
-      <a href="wind.html">
-      <img src = "../assets/images/Fig4.png" title = "vs. Wind Speed" atl = "vs. Wind Speed" width = "300" height="250">
-      </a>
-      </div>
-    </div>    
     <!-- End of container -->
 
     <!-- Start of footer -->

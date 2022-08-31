@@ -57,42 +57,53 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
-   
-      <div id = "leftbox">
-        <h1 class = "comparison-header"> Summary: Latitude vs. X</h1>
-        <hr>
-        <img class = "wrap" src="assets/images/Fig1.jpeg" title="vs. Max Temperature" atl = "vs. Max Temperature" width = "450" height="300">
-        <h5 class = "adjust-line-height">
-          The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we
-          first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 citites.
-          <br>
-          <br>
-          After assembing the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
-          temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of 
-          the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-        </h5>
-      </div>
-      <div id = "rightbox">
-        <h1 class = "comparison-header"> Visualizations</h1>
-        <hr>
-        <div id = "images">
-        <a href="visulaizations/temp.html">
-        <img src = "assets/images/Fig1.jpeg" title = "vs. Max Temperature" atl = "vs. Max Temperature" width = "300" height="250">
-        </a>
-        <a href="visulaizations/humidity.html">
-        <img src = "assets/images/Fig2.png" title = "vs. Humidity" atl = "vs. Humidity" width = "300" height="250">
-        </a>
-        <br>
-        <br>
-        <a href="visulaizations/cloudiness.html">
-        <img src = "assets/images/Fig3.png" title = "vs. Cloudiness" atl = "vs. Cloudiness" width = "300" height="250">
-        </a>
-        <a href="visulaizations/wind.html">
-        <img src = "assets/images/Fig4.png" title = "vs. Wind Speed" atl = "vs. Wind Speed" width = "300" height="250">
-        </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5" id = "box">
+          <h1 class = "comparison-header"> Summary: Latitude vs. X</h1>
+          <hr>
+          <img class = "wrap" src="assets/images/Fig1.jpeg" title="vs. Max Temperature" atl = "vs. Max Temperature" width = "350" height="250">
+            <h5 class = "adjust-line-height">
+              The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we
+              first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 citites.
+              <br>
+              <br>
+              After assembing the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
+              temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of 
+              the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+            </h5>
         </div>
-      </div>    
-
+        <div class = "col-lg-6 offset-lg-1" id = "box">
+          <h1 class = "comparison-header"> Visualizations</h1>
+          <hr>
+          <div id = "images"> 
+            <div class = "row"> 
+              <div class = "col-lg-6 col-sm-3">
+                <a href="visulaizations/temp.html">
+                <img src = "assets/images/Fig1.jpeg" title = "vs. Max Temperature" atl = "vs. Max Temperature" class = "img-responsive">
+                </a>
+              </div>
+              <div class = "col-lg-6 col-sm-3">
+                <a href="visulaizations/humidity.html">
+                <img src = "assets/images/Fig2.png" title = "vs. Humidity" atl = "vs. Humidity" class = "img-responsive">
+                </a>
+              </div>
+              <div class="w-100 d-none d-md-block"></div>
+              <div class = "col-lg-6 col-sm-3">
+                <a href="visulaizations/cloudiness.html">
+                <img src = "assets/images/Fig3.png" title = "vs. Cloudiness" atl = "vs. Cloudiness" class = "img-responsive">
+                </a>
+              </div>
+              <div class = "col-lg-6 col-sm-3">
+                <a href="visulaizations/wind.html">
+                <img src = "assets/images/Fig4.png" title = "vs. Wind Speed" atl = "vs. Wind Speed" class = "img-responsive">
+                </a>
+              </div>
+            </div>
+          </div>      
+        </div> 
+      </div>     
+    </div>
     <!-- End of container -->
 
     <!-- Start of footer -->
